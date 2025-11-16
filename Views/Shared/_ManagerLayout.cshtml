@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - SkyTrip Manager</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('@Url.Content("~/Content/download.png")') no-repeat center center fixed;
+            background-size: cover;
+        }
+        span {
+            color: red;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ff6600;
+            padding: 12px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+        .sidebar {
+            width: 220px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 4px 0 10px rgba(0,0,0,0.2);
+        }
+        .sidebar a {
+            display: block;
+            margin: 12px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+        .sidebar a:hover {
+            background: #ff6600;
+            color: white;
+        }
+        .content {
+            flex: 1;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            margin: 20px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+            overflow-y: auto;
+        }
+        .s{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">@Html.ActionLink("SkyTrip", "Emphome", "Emp", null, new { @style = "color:white; font-weight:bold;" })</div>
+        <div>
+            @Html.ActionLink("Home", "Managerhome", "Manager")
+            @Html.ActionLink("Contact Us", "Contact", "Home")
+            @Html.ActionLink("Sign Out", "Logout", "Account")
+        </div>
+    </div>
+
+    <!-- Sidebar + Content -->
+    <div class="container">
+        <div class="sidebar ">
+            @Html.ActionLink("All Flight Details", "ViewDetails")
+            @Html.ActionLink("Add Flight Details", "Adding")
+            @Html.ActionLink("Passengers Details", "ViewDetails")
+            @Html.ActionLink("About", "About")
+        </div>
+
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿@model Project2d.Models.Booking
+
+@{
+    ViewBag.Title = "Booking";
+    Layout = "~/Views/Shared/_EmpLayout.cshtml";
+    var flight = ViewBag.Flight as Project2d.Models.Flight;
+}
+
+<h2>Booking</h2>
+
+<!-- Show Flight Details -->
+<table class="table">
+    <tr><th>Flight Code</th><td>@flight.FCode</td></tr>
+    <tr><th>Flight Name</th><td>@flight.FName</td></tr>
+    <tr><th>Source</th><td>@flight.Source</td></tr>
+    <tr><th>Destination</th><td>@flight.Destination</td></tr>
+    <tr><th>Arrival</th><td>@flight.Arrival</td></tr>
+    <tr><th>Departure</th><td>@flight.Departure</td></tr>
+</table>
+
+<!-- Booking Form -->
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+ 
+
+    <div class="form-horizontal">
+        <h4>Passenger Booking</h4>
+        <hr />
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.FlyDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.FlyDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.FlyDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Pass_Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Pass_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Pass_Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Addr, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Addr, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Addr)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Phone, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Phone)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Class, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Class, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Class)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Seatno, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Seatno, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Seatno)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.CrdtNo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.CrdtNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.CrdtNo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Fare, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Fare, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Fare)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Book" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}

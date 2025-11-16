@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VistaraDb2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Bookings">
+          <Key>
+            <PropertyRef Name="FCode" />
+          </Key>
+          <Property Name="FCode" Type="int" Nullable="false" />
+          <Property Name="FlyDate" Type="datetime" />
+          <Property Name="Pass_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Addr" Type="varchar" MaxLength="200" />
+          <Property Name="Phone" Type="varchar" MaxLength="20" />
+          <Property Name="Class" Type="varchar" MaxLength="20" />
+          <Property Name="Seatno" Type="varchar" MaxLength="20" />
+          <Property Name="CrdtNo" Type="varchar" MaxLength="20" />
+          <Property Name="Fare" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="EmployeeLogin">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="12" />
+        </EntityType>
+        <EntityType Name="Flights">
+          <Key>
+            <PropertyRef Name="FCode" />
+          </Key>
+          <Property Name="FCode" Type="int" Nullable="false" />
+          <Property Name="FName" Type="varchar" MaxLength="50" />
+          <Property Name="Source" Type="varchar" MaxLength="50" />
+          <Property Name="Destination" Type="varchar" MaxLength="50" />
+          <Property Name="Arrival" Type="time" Precision="7" />
+          <Property Name="Departure" Type="time" Precision="7" />
+          <Property Name="Exe_Seats" Type="int" />
+          <Property Name="Exe_Fare" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Eco_Seats" Type="int" />
+          <Property Name="Eco_Fare" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Bus_Seats" Type="int" />
+          <Property Name="Bus_Fare" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="ManagerLogin">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="12" />
+        </EntityType>
+        <EntityContainer Name="VistaraDb2ModelStoreContainer">
+          <EntitySet Name="Bookings" EntityType="Self.Bookings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmployeeLogin" EntityType="Self.EmployeeLogin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Flights" EntityType="Self.Flights" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ManagerLogin" EntityType="Self.ManagerLogin" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VistaraDb2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="VistaraDb2Entities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Flights" EntityType="VistaraDb2Model.Flight" />
+          <EntitySet Name="Bookings" EntityType="VistaraDb2Model.Booking" />
+          <EntitySet Name="EmployeeLogins" EntityType="VistaraDb2Model.EmployeeLogin" />
+          <EntitySet Name="ManagerLogins" EntityType="VistaraDb2Model.ManagerLogin" />
+        </EntityContainer>
+        <EntityType Name="Flight">
+          <Key>
+            <PropertyRef Name="FCode" />
+          </Key>
+          <Property Name="FCode" Type="Int32" Nullable="false" />
+          <Property Name="FName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Source" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Destination" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Arrival" Type="Time" Precision="7" />
+          <Property Name="Departure" Type="Time" Precision="7" />
+          <Property Name="Exe_Seats" Type="Int32" />
+          <Property Name="Exe_Fare" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Eco_Seats" Type="Int32" />
+          <Property Name="Eco_Fare" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Bus_Seats" Type="Int32" />
+          <Property Name="Bus_Fare" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="Booking">
+          <Key>
+            <PropertyRef Name="FCode" />
+          </Key>
+          <Property Name="FCode" Type="Int32" Nullable="false" />
+          <Property Name="FlyDate" Type="DateTime" Precision="3" />
+          <Property Name="Pass_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Addr" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Class" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Seatno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CrdtNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Fare" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="EmployeeLogin">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ManagerLogin">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VistaraDb2ModelStoreContainer" CdmEntityContainer="VistaraDb2Entities" >
+          <EntitySetMapping Name="Flights">
+            <EntityTypeMapping TypeName="VistaraDb2Model.Flight">
+              <MappingFragment StoreEntitySet="Flights">
+                <ScalarProperty Name="Bus_Fare" ColumnName="Bus_Fare" />
+                <ScalarProperty Name="Bus_Seats" ColumnName="Bus_Seats" />
+                <ScalarProperty Name="Eco_Fare" ColumnName="Eco_Fare" />
+                <ScalarProperty Name="Eco_Seats" ColumnName="Eco_Seats" />
+                <ScalarProperty Name="Exe_Fare" ColumnName="Exe_Fare" />
+                <ScalarProperty Name="Exe_Seats" ColumnName="Exe_Seats" />
+                <ScalarProperty Name="Departure" ColumnName="Departure" />
+                <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+                <ScalarProperty Name="Destination" ColumnName="Destination" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="FName" ColumnName="FName" />
+                <ScalarProperty Name="FCode" ColumnName="FCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Bookings">
+            <EntityTypeMapping TypeName="VistaraDb2Model.Booking">
+              <MappingFragment StoreEntitySet="Bookings">
+                <ScalarProperty Name="Fare" ColumnName="Fare" />
+                <ScalarProperty Name="CrdtNo" ColumnName="CrdtNo" />
+                <ScalarProperty Name="Seatno" ColumnName="Seatno" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Addr" ColumnName="Addr" />
+                <ScalarProperty Name="Pass_Name" ColumnName="Pass_Name" />
+                <ScalarProperty Name="FlyDate" ColumnName="FlyDate" />
+                <ScalarProperty Name="FCode" ColumnName="FCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeLogins">
+            <EntityTypeMapping TypeName="VistaraDb2Model.EmployeeLogin">
+              <MappingFragment StoreEntitySet="EmployeeLogin">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ManagerLogins">
+            <EntityTypeMapping TypeName="VistaraDb2Model.ManagerLogin">
+              <MappingFragment StoreEntitySet="ManagerLogin">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

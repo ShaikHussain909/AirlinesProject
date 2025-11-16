@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VistaraDb2ModelStoreContainer" CdmEntityContainer="VistaraDb2Entities">
+    <EntitySetMapping Name="Flights">
+      <EntityTypeMapping TypeName="VistaraDb2Model.Flight">
+        <MappingFragment StoreEntitySet="Flights">
+          <ScalarProperty Name="Bus_Fare" ColumnName="Bus_Fare" />
+          <ScalarProperty Name="Bus_Seats" ColumnName="Bus_Seats" />
+          <ScalarProperty Name="Eco_Fare" ColumnName="Eco_Fare" />
+          <ScalarProperty Name="Eco_Seats" ColumnName="Eco_Seats" />
+          <ScalarProperty Name="Exe_Fare" ColumnName="Exe_Fare" />
+          <ScalarProperty Name="Exe_Seats" ColumnName="Exe_Seats" />
+          <ScalarProperty Name="Departure" ColumnName="Departure" />
+          <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="FCode" ColumnName="FCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bookings">
+      <EntityTypeMapping TypeName="VistaraDb2Model.Booking">
+        <MappingFragment StoreEntitySet="Bookings">
+          <ScalarProperty Name="Fare" ColumnName="Fare" />
+          <ScalarProperty Name="CrdtNo" ColumnName="CrdtNo" />
+          <ScalarProperty Name="Seatno" ColumnName="Seatno" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Addr" ColumnName="Addr" />
+          <ScalarProperty Name="Pass_Name" ColumnName="Pass_Name" />
+          <ScalarProperty Name="FlyDate" ColumnName="FlyDate" />
+          <ScalarProperty Name="FCode" ColumnName="FCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeLogins">
+      <EntityTypeMapping TypeName="VistaraDb2Model.EmployeeLogin">
+        <MappingFragment StoreEntitySet="EmployeeLogin">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManagerLogins">
+      <EntityTypeMapping TypeName="VistaraDb2Model.ManagerLogin">
+        <MappingFragment StoreEntitySet="ManagerLogin">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

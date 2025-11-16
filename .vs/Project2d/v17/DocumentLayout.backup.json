@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\visual studio\\MVC\\Project2d\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|d:\\visual studio\\mvc\\project2d\\views\\manager\\adding.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:views\\manager\\adding.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\models\\loginres.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:models\\loginres.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\views\\emp\\searchflight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:views\\emp\\searchflight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\views\\emp\\booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:views\\emp\\booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\views\\emp\\booking1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:views\\emp\\booking1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\views\\shared\\_emplayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:views\\shared\\_emplayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\views\\shared\\_managerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:views\\shared\\_managerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\views\\manager\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:views\\manager\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|D:\\visual studio\\MVC\\Project2d\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4709A57-56CE-4F3A-9A2C-D3BE343176DE}|Project2d.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ManagerLayout.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Views\\Shared\\_ManagerLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ManagerLayout.cshtml",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Views\\Shared\\_ManagerLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ManagerLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-03T10:11:59.74Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_EmpLayout.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Views\\Shared\\_EmpLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_EmpLayout.cshtml",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Views\\Shared\\_EmpLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_EmpLayout.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAIB5wFUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-03T10:28:30.252Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Adding.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Views\\Manager\\Adding.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manager\\Adding.cshtml",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Views\\Manager\\Adding.cshtml",
+              "RelativeToolTip": "Views\\Manager\\Adding.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-03T10:44:54.994Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchFlight.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Views\\Emp\\SearchFlight.cshtml",
+              "RelativeDocumentMoniker": "Views\\Emp\\SearchFlight.cshtml",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Views\\Emp\\SearchFlight.cshtml",
+              "RelativeToolTip": "Views\\Emp\\SearchFlight.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-03T04:58:37.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmpController.cs",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Controllers\\EmpController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmpController.cs",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Controllers\\EmpController.cs",
+              "RelativeToolTip": "Controllers\\EmpController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAWwDgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T04:10:26.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Booking.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Views\\Emp\\Booking.cshtml",
+              "RelativeDocumentMoniker": "Views\\Emp\\Booking.cshtml",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Views\\Emp\\Booking.cshtml",
+              "RelativeToolTip": "Views\\Emp\\Booking.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-03T10:53:42.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginRes.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Models\\LoginRes.edmx",
+              "RelativeDocumentMoniker": "Models\\LoginRes.edmx",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Models\\LoginRes.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\LoginRes.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-10-03T09:31:40.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "Models\\Booking.cs",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Models\\Booking.cs",
+              "RelativeToolTip": "Models\\Booking.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T14:48:26.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Views\\Manager\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manager\\Edit.cshtml",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Views\\Manager\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Manager\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T06:00:04.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Booking1.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Views\\Emp\\Booking1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Emp\\Booking1.cshtml",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Views\\Emp\\Booking1.cshtml",
+              "RelativeToolTip": "Views\\Emp\\Booking1.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-03T14:25:16.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T09:04:02.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "D:\\visual studio\\MVC\\Project2d\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ManagerController.cs",
+              "ToolTip": "D:\\visual studio\\MVC\\Project2d\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "Controllers\\ManagerController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwCkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T05:07:51.334Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

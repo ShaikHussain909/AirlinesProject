@@ -1,0 +1,102 @@
+﻿@model IEnumerable<Project2d.Models.Flight>
+
+@{
+    Layout = "~/Views/Shared/_EmpLayout.cshtml";
+}
+
+<h2 style="margin-bottom:20px;">View Details</h2>
+<table class="flight-table">
+    <thead>
+        <tr>
+            <th>FCode</th>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Arrival</th>
+            <th>Departure</th>
+            <th>Eco Fare</th>
+            <th>Exe Fare</th>
+            <th>Bus Fare</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FCode</td>
+                <td>@item.FName</td>
+                <td>@item.Source</td>
+                <td>@item.Destination</td>
+                <td>@item.Arrival</td>
+                <td>@item.Departure</td>
+                <td>@item.Eco_Fare</td>
+                <td>@item.Exe_Fare</td>
+                <td>@item.Bus_Fare</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Manager", new { id = item.FCode })" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="@Url.Action("Delete", "Manager", new { id = item.FCode })" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this flight?');">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    .flight-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+    }
+
+        .flight-table thead {
+            background-color: #ff6600; /* orange header */
+            color: white;
+            text-align: left;
+        }
+
+        .flight-table th, .flight-table td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        .flight-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .flight-table tbody tr:hover {
+            background-color: #f1f1f1;
+            transition: 0.2s;
+        }
+
+    .btn {
+        padding: 6px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff !important;
+        font-size: 14px;
+        margin: 2px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        margin-bottom: 10px;
+    }
+
+    .btn-sm {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+</style>

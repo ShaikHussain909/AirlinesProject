@@ -1,0 +1,114 @@
+﻿@model Project2d.Models.LoginModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('@Url.Content("~/Content/download.jpeg")') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+        .login-box {
+            width: 380px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .login-box h2 {
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+            .login-box h3 {
+                font-size: 28px;
+                color: #0066cc;
+                margin-bottom: 10px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                text-decoration: underline;
+            }
+
+        .textbox {
+            margin: 20px 0;
+        }
+        .textbox input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-bottom: 2px solid #ff6600;
+            background: transparent;
+            outline: none;
+        }
+        .radio-group {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #e65c00;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h3>skytrip</h3>
+        <h2>Login</h2>
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="textbox">
+                @Html.TextBoxFor(m => m.Username, new { placeholder = "Username", required = "required" })
+            </div>
+
+            <div class="textbox">
+                @Html.PasswordFor(m => m.Password, new { placeholder = "Password", required = "required" })
+            </div>
+
+            <div class="radio-group">
+                <label>
+                    @Html.RadioButtonFor(m => m.Role, "Employee", new { required = "required" }) Employee
+                </label>
+                <label>
+                    @Html.RadioButtonFor(m => m.Role, "Manager") Manager
+                </label>
+            </div>
+
+            <input type="submit" class="btn" value="Login" />
+
+            <div class="error">@((ViewBag.Error ?? ""))</div>
+        }
+    </div>
+</body>
+</html>

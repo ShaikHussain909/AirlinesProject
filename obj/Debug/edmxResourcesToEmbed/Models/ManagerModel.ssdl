@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VistaraDb2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bookings">
+    <Key>
+      <PropertyRef Name="FCode" />
+    </Key>
+    <Property Name="FCode" Type="int" Nullable="false" />
+    <Property Name="FlyDate" Type="datetime" />
+    <Property Name="Pass_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Addr" Type="varchar" MaxLength="200" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Class" Type="varchar" MaxLength="20" />
+    <Property Name="Seatno" Type="varchar" MaxLength="20" />
+    <Property Name="CrdtNo" Type="varchar" MaxLength="20" />
+    <Property Name="Fare" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="EmployeeLogin">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="Flights">
+    <Key>
+      <PropertyRef Name="FCode" />
+    </Key>
+    <Property Name="FCode" Type="int" Nullable="false" />
+    <Property Name="FName" Type="varchar" MaxLength="50" />
+    <Property Name="Source" Type="varchar" MaxLength="50" />
+    <Property Name="Destination" Type="varchar" MaxLength="50" />
+    <Property Name="Arrival" Type="time" Precision="7" />
+    <Property Name="Departure" Type="time" Precision="7" />
+    <Property Name="Exe_Seats" Type="int" />
+    <Property Name="Exe_Fare" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Eco_Seats" Type="int" />
+    <Property Name="Eco_Fare" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Bus_Seats" Type="int" />
+    <Property Name="Bus_Fare" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="ManagerLogin">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="12" />
+  </EntityType>
+  <EntityContainer Name="VistaraDb2ModelStoreContainer">
+    <EntitySet Name="Bookings" EntityType="Self.Bookings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeLogin" EntityType="Self.EmployeeLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Flights" EntityType="Self.Flights" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ManagerLogin" EntityType="Self.ManagerLogin" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

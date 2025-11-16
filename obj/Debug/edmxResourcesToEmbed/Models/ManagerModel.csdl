@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VistaraDb2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="VistaraDb2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Flights" EntityType="VistaraDb2Model.Flight" />
+    <EntitySet Name="Bookings" EntityType="VistaraDb2Model.Booking" />
+    <EntitySet Name="EmployeeLogins" EntityType="VistaraDb2Model.EmployeeLogin" />
+    <EntitySet Name="ManagerLogins" EntityType="VistaraDb2Model.ManagerLogin" />
+  </EntityContainer>
+  <EntityType Name="Flight">
+    <Key>
+      <PropertyRef Name="FCode" />
+    </Key>
+    <Property Name="FCode" Type="Int32" Nullable="false" />
+    <Property Name="FName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Source" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Destination" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Arrival" Type="Time" Precision="7" />
+    <Property Name="Departure" Type="Time" Precision="7" />
+    <Property Name="Exe_Seats" Type="Int32" />
+    <Property Name="Exe_Fare" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Eco_Seats" Type="Int32" />
+    <Property Name="Eco_Fare" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Bus_Seats" Type="Int32" />
+    <Property Name="Bus_Fare" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="FCode" />
+    </Key>
+    <Property Name="FCode" Type="Int32" Nullable="false" />
+    <Property Name="FlyDate" Type="DateTime" Precision="3" />
+    <Property Name="Pass_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Addr" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Class" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Seatno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CrdtNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fare" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="EmployeeLogin">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ManagerLogin">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

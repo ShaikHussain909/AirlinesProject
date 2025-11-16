@@ -1,0 +1,144 @@
+﻿@model IEnumerable<Project2d.Models.Flight>
+
+@{
+    ViewBag.Title = "Search Flight";
+    Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+
+<h2 style="margin-bottom:20px;">Search Flight</h2>
+
+<div class="form-container">
+    @using (Html.BeginForm("SearchFlight", "Emp", FormMethod.Post))
+    {
+        <div class="form-row">
+            <div class="form-group col">
+                @Html.Label("Source")
+                <input type="text" name="Sou" class="form-control" placeholder="Enter Source" required />
+            </div>
+
+            <div class="form-group col">
+                @Html.Label("Destination")
+                <input type="text" name="Des" class="form-control" placeholder="Enter Destination" required />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col text-center">
+                <input type="submit" value="Search" class="btn btn-danger" />
+            </div>
+        </div>
+    }
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <div class="form-container" style="margin-top:30px;">
+        <h3>Available Flights</h3>
+        <table class="table table-bordered table-striped table-hover">
+            <thead style="background: linear-gradient(to right, #6a11cb, #2575fc); color:white;">
+                <tr>
+                    <th>Flight Code</th>
+                    <th>Flight Name</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Arrival</th>
+                    <th>Departure</th>
+                    <th>Exec Seats</th>
+                    <th>Exec Fare</th>
+                    <th>Eco Seats</th>
+                    <th>Eco Fare</th>
+                    <th>Business Seats</th>
+                    <th>Business Fare</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var flight in Model)
+                {
+                    <tr>
+                        <td>@flight.FCode</td>
+                        <td>@flight.FName</td>
+                        <td>@flight.Source</td>
+                        <td>@flight.Destination</td>
+                        <td>@flight.Arrival</td>
+                        <td>@flight.Departure</td>
+                        <td>@flight.Exe_Seats</td>
+                        <td>@flight.Exe_Fare</td>
+                        <td>@flight.Eco_Seats</td>
+                        <td>@flight.Eco_Fare</td>
+                        <td>@flight.Bus_Seats</td>
+                        <td>@flight.Bus_Fare</td>
+                        <td>
+                            <a href="@Url.Action("Booking", "Emp", new { id = flight.FCode })" class="btn btn-primary btn-sm">Book</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else if (Model != null)
+{
+    <div class="form-container text-center" style="margin-top:20px; color:red; font-weight:bold;">
+        No flights found for the given source and destination.
+    </div>
+}
+<style>
+    .flight-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+    }
+
+        .flight-table thead {
+            background-color: #ff6600; /* orange header */
+            color: white;
+            text-align: left;
+        }
+
+        .flight-table th, .flight-table td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        .flight-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .flight-table tbody tr:hover {
+            background-color: #f1f1f1;
+            transition: 0.2s;
+        }
+
+    .btn {
+        padding: 6px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff !important;
+        font-size: 14px;
+        margin: 2px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        margin-bottom: 10px;
+    }
+
+    .btn-sm {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+</style>
